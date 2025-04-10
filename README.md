@@ -1,6 +1,44 @@
 # Projeto Brainstorming-for-Class
 
-## Fluxo de Trabalho em Equipe
+## 1. Descrição Geral
+
+**Brainstorming-for-Class** é uma plataforma digital voltada para estudantes, com foco em **aprendizado colaborativo**. A proposta é oferecer um espaço centralizado, intuitivo e responsivo para:
+
+- Troca de informações
+- Compartilhamento de materiais de estudo
+- Tirar dúvidas
+- Colaboração em grupo
+
+A plataforma busca ser simples, acessível e moderna, promovendo um ambiente virtual de estudo mais **dinâmico e interativo**.
+
+---
+
+## 2. Funcionalidades Planejadas
+
+- [ ] Cadastro e login de usuários
+- [ ] Criação e entrada em grupos de estudo
+- [ ] Compartilhamento de arquivos e links úteis
+- [ ] Chat e fórum para dúvidas e discussões
+- [ ] Interface responsiva para dispositivos móveis
+- [ ] Painel de administração para organização dos conteúdos
+- [ ] Sistema de votação ou destaque para conteúdos mais úteis
+
+---
+
+## 3. Tecnologias Utilizadas
+
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **React** (para construção da interface)
+- **Tailwind CSS** ou **Bootstrap** (para estilização avançada e responsividade)
+- **Git** e **GitHub** (para versionamento e colaboração)
+- **Metodologia ágil (Scrum)** com acompanhamento via **Trello**:
+- [Sprint 1 - Front-End Inicial](https://trello.com/b/wa0MC2Yo/sprint-1-front-end-inicial)
+
+---
+
+## 4. Fluxo de Trabalho em Equipe
 
 Este repositório está sendo desenvolvido por uma equipe de 6 pessoas. Cada integrante possui uma branch própria de desenvolvimento.
 
@@ -16,22 +54,30 @@ Este repositório está sendo desenvolvido por uma equipe de 6 pessoas. Cada int
 - `filipe-v1`
 - `arthur-v1`
 
----
+### Regras para Contribuir
 
-## Regras para Contribuir
-
-1. **Trabalhe somente na sua branch** (`seu-nome-v1`).
-2. Antes de começar o trabalho do dia, atualize sua branch com as alterações da `developer-testes`.
-3. Faça commits com mensagens claras e objetivas.
-4. Ao finalizar uma tarefa, crie um **Pull Request** da sua branch para `developer-testes`.
-5. O código será testado na `developer-testes` antes de ser integrado à `main`.
+1. Trabalhe somente na sua branch.
+2. Atualize sua branch com a `developer-testes` antes de começar.
+3. Faça commits com mensagens claras.
+4. Crie um Pull Request da sua branch para `developer-testes`.
+5. O código será testado antes de ser integrado à `main`.
 
 ---
 
-## Comandos Úteis
-
-### Clonar o Repositório
+## 5. Comandos Úteis
 
 ```bash
+# Clonar o repositório
 git clone https://github.com/izabellesouza/brainstorming-for-class-.git
 cd brainstorming-for-class-
+
+# Mudar para sua branch
+git checkout sua-branch
+
+# Atualizar com developer-testes
+git pull origin developer-testes
+
+# Subir mudanças
+git add .
+git commit -m "Mensagem clara"
+git push origin sua-branch
