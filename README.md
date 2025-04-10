@@ -2,7 +2,7 @@
 
 ## Fluxo de Trabalho em Equipe
 
-Este repositório está sendo desenvolvido por uma equipe de 7 pessoas. Cada integrante possui uma branch própria de desenvolvimento.
+Este repositório está sendo desenvolvido por uma equipe de 6 pessoas. Cada integrante possui uma branch própria de desenvolvimento.
 
 ### Branches Atuais
 
