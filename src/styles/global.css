@@ -39,3 +39,41 @@ a {
 section {
   @apply py-12 px-4 md:px-8;
 }
+
+/* Ajustes de responsividade */
+@media (max-width: 640px) {
+
+  /* Ajustes para telas pequenas (celulares) */
+  body {
+    font-size: 14px;
+    /* Texto menor para se ajustar melhor */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 1.2rem;
+    /* Ajusta o tamanho das fontes nos títulos */
+  }
+
+  /* Navbar e Footer (ajustes adicionais) */
+  .navbar,
+  .footer {
+    padding: 10px;
+    /* Menos padding em dispositivos móveis */
+  }
+
+  /* Ajuste do layout geral */
+  .main-content {
+    padding: 10px;
+  }
+}
+
+/* Para tablet */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+}
