@@ -1,30 +1,50 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const Forum = () => {
     return (
-        <section className="py-16 bg-gray-100">
-            <div className="max-w-7xl mx-auto px-4">
-                <h2 className="text-3xl font-semibold text-center text-gray-900 mb-8">Fórum</h2>
-                <p className="text-center text-lg text-gray-700 mb-6">
-                    Participe de discussões e tire dúvidas com a comunidade.
-                </p>
-                {/* Aqui você pode adicionar tópicos ou cards de discussão */}
+        <section className="relative bg-gradient-to-br from-indigo-500 via-purple-600 to-pink-500 min-h-screen py-20 text-white overflow-hidden">
+            {/* Elementos decorativos */}
+            <div className="absolute w-80 h-80 bg-white/10 rounded-full top-[-50px] left-[-50px] blur-3xl animate-pulse-slow"></div>
+            <div className="absolute w-80 h-80 bg-white/10 rounded-full bottom-[-50px] right-[-50px] blur-3xl animate-pulse-slow"></div>
+
+            <div className="relative z-10 max-w-7xl mx-auto px-4">
+                <motion.h2
+                    initial={{ opacity: 0, y: -30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7 }}
+                    className="text-4xl font-bold text-center mb-6 drop-shadow-lg"
+                >
+                    Fórum de Discussões
+                </motion.h2>
+
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.3, duration: 0.7 }}
+                    className="text-center text-lg text-white/90 mb-10"
+                >
+                    Participe de debates, esclareça dúvidas e troque conhecimento com a comunidade 👥
+                </motion.p>
+
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div className="bg-white p-6 rounded-lg shadow-lg">
-                        <h3 className="text-xl font-medium text-gray-800">Dúvida sobre Cálculo</h3>
-                        <p className="text-gray-600 mt-2">Como resolver essa equação diferencial?</p>
-                        <a href="#" className="text-blue-500 hover:underline">Participar da discussão</a>
-                    </div>
-                    <div className="bg-white p-6 rounded-lg shadow-lg">
-                        <h3 className="text-xl font-medium text-gray-800">Discussão sobre História</h3>
-                        <p className="text-gray-600 mt-2">O que causou a Revolução Francesa?</p>
-                        <a href="#" className="text-blue-500 hover:underline">Participar da discussão</a>
-                    </div>
-                    {/* Adicione mais discussões conforme necessário */}
+                    {[1, 2, 3].map((_, i) => (
+                        <motion.div
+                            key={i}
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.2 * i, duration: 0.6 }}
+                            className="bg-white/10 p-6 rounded-2xl shadow-lg backdrop-blur-sm hover:shadow-xl transition-all"
+                        >
+                            <h3 className="text-xl font-semibold mb-2">Tópico de Discussão #{i + 1}</h3>
+                            <p className="text-white/80 mb-2">Exemplo de dúvida ou tópico interessante para iniciar o debate.</p>
+                            <a href="#" className="text-white font-medium underline underline-offset-4 hover:text-pink-300 transition-colors">Participar</a>
+                        </motion.div>
+                    ))}
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Forum
+export default Forum;

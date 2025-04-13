@@ -4,9 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Fonte padrão */
+/* Fonte padrão global */
 body {
+  @apply bg-white text-black dark:bg-gray-900 dark:text-white;
   font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
 }
 
 /* Estilo global para botões com suporte a tema escuro/claro */
@@ -18,4 +20,22 @@ button {
 
   /* Tema escuro */
   @apply dark:bg-blue-700 dark:text-white dark:hover:bg-blue-800;
+}
+
+/* Melhorando o layout geral */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @apply font-semibold;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  @apply transition-colors duration-300;
+}
+
+section {
+  @apply py-12 px-4 md:px-8;
 }
