@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonte padrão */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo global para botões com suporte a tema escuro/claro */
+button {
+  @apply px-4 py-2 rounded font-medium transition duration-300;
+
+  /* Tema claro */
+  @apply bg-blue-500 text-white hover:bg-blue-600;
+
+  /* Tema escuro */
+  @apply dark:bg-blue-700 dark:text-white dark:hover:bg-blue-800;
+}
