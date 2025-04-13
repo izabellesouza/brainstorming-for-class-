@@ -6,7 +6,9 @@ import HeroParallax from '../components/HeroParallax';
 const Home = () => {
     return (
         <HeroParallax>
-            <section className="bg-gradient-to-r from-teal-500 to-indigo-600 w-[90vw] max-w-6xl mx-auto rounded-3xl shadow-xl p-12 text-white text-center relative overflow-hidden">
+            <section className="w-[90vw] max-w-6xl mx-auto rounded-3xl shadow-xl p-12 text-white text-center relative overflow-hidden
+  bg-gradient-to-r from-teal-500 to-indigo-600 dark:from-gray-800 dark:to-gray-900 transition-colors duration-500">
+
                 {/* Elementos caindo (livros, lápis, computadores) */}
                 <motion.div
                     className="absolute bottom-0 left-0 w-[70px] h-[70px] bg-cover bg-no-repeat"

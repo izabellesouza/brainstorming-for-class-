@@ -12,7 +12,11 @@ import Login from './pages/Login';
 
 const App = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <div className="flex flex-col min-h-screen 
+      bg-gradient-to-br from-gray-50 via-white to-gray-100 
+      dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 
+      text-black dark:text-white transition-colors duration-500"
+    >
       <Navbar />
       <main className="flex-1">
         <Routes>
