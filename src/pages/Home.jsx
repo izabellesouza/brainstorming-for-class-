@@ -6,8 +6,8 @@ import HeroParallax from '../components/HeroParallax';
 const Home = () => {
     return (
         <HeroParallax>
-            <section className="w-[90vw] max-w-6xl mx-auto rounded-3xl shadow-xl p-12 text-white text-center relative overflow-hidden
-  bg-gradient-to-r from-teal-500 to-indigo-600 dark:from-gray-800 dark:to-gray-900 transition-colors duration-500">
+            <section className="w-full max-w-6xl mx-auto rounded-3xl shadow-xl p-12 text-white text-center relative overflow-hidden
+            bg-gradient-to-r from-teal-500 to-indigo-600 dark:from-gray-800 dark:to-gray-900 transition-colors duration-500">
 
                 {/* Elementos caindo (livros, lápis, computadores) */}
                 <motion.div
@@ -65,7 +65,7 @@ const Home = () => {
                     initial={{ opacity: 0, y: -40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
-                    className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-xl tracking-wide"
+                    className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 drop-shadow-xl tracking-wide"
                 >
                     Brainstorming for Class
                 </motion.h1>
@@ -75,7 +75,7 @@ const Home = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.5, duration: 0.8 }}
-                    className="text-lg md:text-2xl max-w-2xl mx-auto mb-12 text-white/90"
+                    className="text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto mb-12 text-white/90"
                 >
                     Uma plataforma para estudantes colaborarem, aprenderem juntos e brilharem em grupo
                 </motion.p>
