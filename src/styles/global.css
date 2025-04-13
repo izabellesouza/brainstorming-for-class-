@@ -1,79 +1,39 @@
+/* global.css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
 
+/* Tailwind base styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Fonte padrão global */
+/* Estilo global */
 body {
   @apply bg-white text-black dark:bg-gray-900 dark:text-white;
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
 }
 
-/* Estilo global para botões com suporte a tema escuro/claro */
+/* Estilos para botões */
 button {
   @apply px-4 py-2 rounded font-medium transition duration-300;
-
-  /* Tema claro */
-  @apply bg-blue-500 text-white hover:bg-blue-600;
-
-  /* Tema escuro */
-  @apply dark:bg-blue-700 dark:text-white dark:hover:bg-blue-800;
+  @apply bg-blue-500 text-white hover:bg-blue-600 dark:bg-blue-700 dark:text-white dark:hover:bg-blue-800;
 }
 
-/* Melhorando o layout geral */
+/* Estilos para títulos */
 h1,
 h2,
 h3,
 h4,
 h5 {
   @apply font-semibold;
-  font-family: 'Poppins', sans-serif;
 }
 
+/* Links */
 a {
   @apply transition-colors duration-300;
 }
 
+/* Seções */
 section {
   @apply py-12 px-4 md:px-8;
-}
-
-/* Ajustes de responsividade */
-@media (max-width: 640px) {
-
-  /* Ajustes para telas pequenas (celulares) */
-  body {
-    font-size: 14px;
-    /* Texto menor para se ajustar melhor */
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-size: 1.2rem;
-    /* Ajusta o tamanho das fontes nos títulos */
-  }
-
-  /* Navbar e Footer (ajustes adicionais) */
-  .navbar,
-  .footer {
-    padding: 10px;
-    /* Menos padding em dispositivos móveis */
-  }
-
-  /* Ajuste do layout geral */
-  .main-content {
-    padding: 10px;
-  }
-}
-
-/* Para tablet */
-@media (max-width: 768px) {
-  body {
-    font-size: 15px;
-  }
 }
