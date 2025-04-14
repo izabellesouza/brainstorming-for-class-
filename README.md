@@ -81,3 +81,5 @@ git pull origin developer-testes
 git add .
 git commit -m "Mensagem clara"
 git push origin sua-branch
+
+testando commit
