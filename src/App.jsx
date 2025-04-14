@@ -9,6 +9,7 @@ import Forum from './pages/Forum';
 import Grupos from './components/Grupos';
 import Chat from './pages/Chat';
 import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/grupos" element={<Grupos />} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </main>
       <Footer />
