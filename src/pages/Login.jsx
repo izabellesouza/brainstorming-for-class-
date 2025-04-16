@@ -34,7 +34,7 @@ const Login = () => {
                     initial={{ opacity: 0, y: -30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7 }}
-                    className="text-4xl sm:text-5xl font-semibold text-center mb-8 drop-shadow-xl text-black dark:text-white"
+                    className="text-4xl sm:text-5xl font-semibold text-center mb-8 drop-shadow-xl text-white dark:text-white"
                 >
                     Acesse sua conta
                 </motion.h2>
@@ -45,7 +45,7 @@ const Login = () => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.3, duration: 0.7 }}
                     >
-                        <label htmlFor="email" className="block text-lg font-medium text-black dark:text-white">
+                        <label htmlFor="email" className="block text-lg font-medium text-white dark:text-white">
                             E-mail
                         </label>
                         <input
@@ -63,7 +63,7 @@ const Login = () => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.4, duration: 0.7 }}
                     >
-                        <label htmlFor="password" className="block text-lg font-medium text-black dark:text-white">
+                        <label htmlFor="password" className="block text-lg font-medium text-white dark:text-white">
                             Senha
                         </label>
                         <input
