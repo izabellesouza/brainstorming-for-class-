@@ -53,7 +53,7 @@ const Signup = () => {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
-                            className="w-full px-4 py-3 mt-2 text-black rounded-md focus:outline-none focus:ring-2 focus:ring-teal-300 dark:text-white dark:bg-black dark:ring-teal-400"
+                            className="w-full px-4 py-3 mt-2 text-black dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-300"
                         />
                     </motion.div>
 
@@ -69,7 +69,7 @@ const Signup = () => {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             required
-                            className="w-full px-4 py-3 mt-2 text-black rounded-md focus:outline-none focus:ring-2 focus:ring-teal-300 dark:text-white dark:bg-black dark:ring-teal-400"
+                            className="w-full px-4 py-3 mt-2 text-black dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-300"
                         />
                     </motion.div>
 
@@ -85,7 +85,7 @@ const Signup = () => {
                             value={confirmPassword}
                             onChange={(e) => setConfirmPassword(e.target.value)}
                             required
-                            className="w-full px-4 py-3 mt-2 text-black rounded-md focus:outline-none focus:ring-2 focus:ring-teal-300 dark:text-white dark:bg-black dark:ring-teal-400"
+                            className="w-full px-4 py-3 mt-2 text-black dark:text-white bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-300"
                         />
                     </motion.div>
 
@@ -93,7 +93,7 @@ const Signup = () => {
                         type="submit"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="w-full py-3 bg-teal-500 text-white rounded-md shadow-lg hover:bg-teal-600 transition-all duration-300"
+                        className="w-full py-3 bg-teal-500 dark:bg-teal-600 text-white rounded-md shadow-lg hover:bg-teal-600 dark:hover:bg-teal-700 transition-all duration-300"
                     >
                         Criar Conta
                     </motion.button>
