@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <HeroParallax>
             <section className="w-full max-w-6xl mx-auto rounded-3xl shadow-xl p-12 text-white text-center relative overflow-hidden
-            bg-gradient-to-r from-teal-500 to-indigo-600 dark:from-gray-800 dark:to-gray-900 transition-colors duration-500">
+            bg-gradient-to-r from-teal-500 to-indigo-600 dark:from-gray-900 dark:to-gray-900 transition-colors duration-500">
 
                 {/* Elementos caindo (livros, lápis, computadores) */}
                 <motion.div
