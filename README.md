@@ -50,7 +50,7 @@ Este repositório está sendo desenvolvido por uma equipe de 6 pessoas. Cada int
 - `izabelle-v1`
 - `kayo-v1`
 - `sabrina-v1`
-- `janiclecia-v1`
+- `jani-v1`
 - `filipe-v1`
 - `arthur-v1`
 
